@@ -1,0 +1,14 @@
+[Desktop Entry]
+# VERSION=3.36.1.1
+Name[ja]=Calculator
+Name=Terminal
+Comment=Simple Calculator
+Keywords=calculator
+TryExec=calculator
+Exec=calculator
+Icon=com.blogspot.bitwalk.Calculator
+Type=Application
+Categories=GNOME;GTK;Vala
+StartupNotify=true
+X-GNOME-SingleWindow=false
+Actions=new-window
