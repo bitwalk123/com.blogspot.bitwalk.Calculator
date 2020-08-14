@@ -1,0 +1,29 @@
+id: com.blogspot.bitwalk.Calculator
+runtime: org.gnome.Platform
+runtime-version: '3.36'
+sdk: org.gnome.Sdk
+command: calculator
+finish-args:
+  - --socket=pulseaudio
+  - --socket=x11 
+  - --share=ipc
+  - --socket=wayland
+  - --device=dri
+  - --share=network
+  - --filesystem=xdg-run/dconf
+  - --filesystem=~/.config/dconf:ro
+  - --talk-name=ca.desrt.dconf
+  - --env=DCONF_USER_CONFIG_DIR=.config/dconf
+  - --talk-name=org.gnome.OnlineAccounts
+  - --own-name=org.gnome.FeedReader.ArticleView
+  - --talk-name=org.freedesktop.Notifications
+  - --talk-name=org.freedesktop.secrets
+  - --env=DECSYNC_DIR=.local/share/decsync
+  - --filesystem=~/.local/share/decsync
+modules:
+  - name: calculator
+    buildsystem: meson
+    no-autogen: true
+    sources:
+      - type: git
+        url: https://github.com/bitwalk123/vala-calculator.git
