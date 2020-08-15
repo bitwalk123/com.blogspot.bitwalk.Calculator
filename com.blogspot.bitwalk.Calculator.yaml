@@ -21,13 +21,6 @@ finish-args:
   - --env=DECSYNC_DIR=.local/share/decsync
   - --filesystem=~/.local/share/decsync
 modules:
-  - name: icons
-    buildsystem: simple
-    build-commands:
-      - install -Dm644 Calculator.svg /app/share/icons/hicolor/scalable/apps/com.blogspot.bitwalk.Calculator.svg
-    sources:
-      - type: file
-        path: Calculator.svg
   - name: desktop
     buildsystem: simple
     build-commands:
@@ -35,6 +28,20 @@ modules:
     sources:
       - type: file
         path: Calculator.desktop
+  - name: icons
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 Calculator.svg /app/share/icons/hicolor/scalable/apps/com.blogspot.bitwalk.Calculator.svg
+    sources:
+      - type: file
+        path: Calculator.svg
+  - name: appdata
+    buildsystem: simple
+    build-commands:
+      - install -Dm644 Calculator.appdata.xml /app/share/appdata/com.blogspot.bitwalk.Calculator.appdata.xml
+    sources:
+      - type: file
+        path: Calculator.appdata.xml
   - name: calculator
     buildsystem: meson
     no-autogen: true

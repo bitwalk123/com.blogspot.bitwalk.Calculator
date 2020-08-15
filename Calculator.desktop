@@ -1,11 +1,13 @@
 [Desktop Entry]
 Name=Calculator
+Name[ja]=電卓
 Comment=Simple Calculator
+Comment[ja]=シンプルな電卓エミュレータ
 Keywords=calculator
 TryExec=calculator
 Exec=calculator
 Icon=com.blogspot.bitwalk.Calculator
 Type=Application
-Categories=Utility
+Categories=GNOME;GTK;
 StartupNotify=true
 X-GNOME-SingleWindow=false
