@@ -12,6 +12,10 @@
 
   <launchable type="desktop-id">com.blogspot.bitwalk.Calculator.desktop</launchable>
 
+  <categories>
+    <category>Utility</category>
+  </categories>
+
   <screenshots>
     <screenshot type="default">
       <image>https://github.com/bitwalk123/vala-calculator/blob/master/data/vala-calculator.png</image>
@@ -22,14 +26,14 @@
   </screenshots>
 
   <url type="homepage">https://bitwalk.blogspot.com/</url>
-  <project_group>GNOME</project_group>
+  <project_group>bitWalk</project_group>
 
   <provides>
     <binary>calculator</binary>
   </provides>
 
   <releases>
-    <release version="0.0.2" date="2020-08-16">
+    <release version="0.0.3" date="2020-08-16">
       <description>
         <p>update metainfo</p>
       </description>
