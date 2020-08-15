@@ -8,6 +8,6 @@ TryExec=calculator
 Exec=calculator
 Icon=com.blogspot.bitwalk.Calculator
 Type=Application
-Categories=GNOME;GTK;
+Categories=GNOME;Utility;
 StartupNotify=true
 X-GNOME-SingleWindow=false
