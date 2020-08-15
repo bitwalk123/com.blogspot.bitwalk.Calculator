@@ -19,4 +19,11 @@
   </screenshots>
   <url type="homepage">https://bitwalk.blogspot.com/</url>
   <update_contact>bitwalk_at_gmail.com</update_contact>
+  <releases>
+    <release version="0.0.1" date="2020-08-15">
+      <description>
+        <p>initial versioning</p>
+      </description>
+    </release>
+  </releases>
 </component>
