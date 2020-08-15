@@ -35,13 +35,13 @@ modules:
     sources:
       - type: file
         path: Calculator.svg
-  - name: appdata
+  - name: metainfo
     buildsystem: simple
     build-commands:
-      - install -Dm644 Calculator.appdata.xml /app/share/appdata/com.blogspot.bitwalk.Calculator.appdata.xml
+      - install -Dm644 Calculator.metainfo.xml /app/share/metainfo/com.blogspot.bitwalk.Calculator.metainfo.xml
     sources:
       - type: file
-        path: Calculator.appdata.xml
+        path: Calculator.metainfo.xml
   - name: calculator
     buildsystem: meson
     no-autogen: true

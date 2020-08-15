@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>com.blogspot.bitwalk.Calculator</id>
+  <launchable type="desktop-id">com.blogspot.bitwalk.Calculator.desktop</launchable>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+ and GFDL-1.3</project_license>
+  <name>Calculator</name>
+  <summary>Simple Calculator</summary>
+  <description>
+    <p>Simple Calculator created by Vala.</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/bitwalk123/vala-calculator/blob/master/data/vala-calculator.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://github.com/bitwalk123/vala-calculator/blob/master/data/vala-calculator_msys2.png</image>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://bitwalk.blogspot.com/</url>
+  <update_contact>bitwalk_at_gmail.com</update_contact>
+  <releases>
+    <release version="0.0.1" date="2020-08-15">
+      <description>
+        <p>initial versioning</p>
+      </description>
+    </release>
+  </releases>
+</component>
