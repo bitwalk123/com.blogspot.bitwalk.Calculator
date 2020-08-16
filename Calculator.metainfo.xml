@@ -7,7 +7,7 @@
   <summary>Simple Calculator</summary>
  
   <description>
-    <p>Simple Calculator created by Vala.</p>
+    <p>Simple Calculator created with Vala.</p>
   </description>
 
   <launchable type="desktop-id">com.blogspot.bitwalk.Calculator.desktop</launchable>
@@ -18,10 +18,10 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://github.com/bitwalk123/vala-calculator/blob/master/data/vala-calculator.png</image>
+      <image>https://raw.githubusercontent.com/bitwalk123/vala-calculator/master/data/vala-calculator.png</image>
     </screenshot>
     <screenshot>
-      <image>https://github.com/bitwalk123/vala-calculator/blob/master/data/vala-calculator_msys2.png</image>
+      <image>https://raw.githubusercontent.com/bitwalk123/vala-calculator/master/data/vala-calculator_msys2.png</image>
     </screenshot>
   </screenshots>
 
@@ -33,7 +33,7 @@
   </provides>
 
   <releases>
-    <release version="0.0.3" date="2020-08-16">
+    <release version="0.0.5" date="2020-08-16">
       <description>
         <p>update metainfo</p>
       </description>
