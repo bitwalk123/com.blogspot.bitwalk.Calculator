@@ -1,5 +1,0 @@
-[Runtime]
-name=com.blogspot.bitwalk.Calculator.Debug
-
-[ExtensionOf]
-ref=app/com.blogspot.bitwalk.Calculator/x86_64/master
