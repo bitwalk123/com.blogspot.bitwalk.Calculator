@@ -33,7 +33,7 @@
   </provides>
 
   <releases>
-    <release version="0.0.6" date="2020-08-16">
+    <release version="0.0.5" date="2020-08-16">
       <description>
         <p>update metainfo</p>
       </description>

@@ -1,0 +1,80 @@
+{
+  "id" : "com.blogspot.bitwalk.Calculator",
+  "runtime" : "org.gnome.Platform",
+  "runtime-version" : "3.36",
+  "runtime-commit" : "5d72fb8feab2f53e6542063d640e35fcbabf9c28ebf29b2cacc6faf0f444cbd9",
+  "sdk" : "org.gnome.Sdk",
+  "sdk-commit" : "a9488ee655b701658c0325fcdf0a891be42a84d39c92deef400cfbc30dafd022",
+  "command" : "calculator",
+  "modules" : [
+    {
+      "name" : "desktop",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "Calculator.desktop",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm644 Calculator.desktop /app/share/applications/com.blogspot.bitwalk.Calculator.desktop"
+      ]
+    },
+    {
+      "name" : "icons",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "Calculator.svg",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm644 Calculator.svg /app/share/icons/hicolor/scalable/apps/com.blogspot.bitwalk.Calculator.svg"
+      ]
+    },
+    {
+      "name" : "metainfo",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "Calculator.metainfo.xml",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : [
+        "install -Dm644 Calculator.metainfo.xml /app/share/metainfo/com.blogspot.bitwalk.Calculator.metainfo.xml"
+      ]
+    },
+    {
+      "name" : "calculator",
+      "no-autogen" : true,
+      "buildsystem" : "meson",
+      "sources" : [
+        {
+          "url" : "https://github.com/bitwalk123/vala-calculator.git",
+          "commit" : "21108ef8b791390c57349954b507bcf58d82ebd1",
+          "type" : "git"
+        }
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--socket=pulseaudio",
+    "--socket=x11",
+    "--share=ipc",
+    "--socket=wayland",
+    "--device=dri",
+    "--share=network",
+    "--filesystem=xdg-run/dconf",
+    "--filesystem=~/.config/dconf:ro",
+    "--talk-name=ca.desrt.dconf",
+    "--env=DCONF_USER_CONFIG_DIR=.config/dconf",
+    "--talk-name=org.gnome.OnlineAccounts",
+    "--own-name=org.gnome.FeedReader.ArticleView",
+    "--talk-name=org.freedesktop.Notifications",
+    "--talk-name=org.freedesktop.secrets",
+    "--env=DECSYNC_DIR=.local/share/decsync",
+    "--filesystem=~/.local/share/decsync"
+  ]
+}
